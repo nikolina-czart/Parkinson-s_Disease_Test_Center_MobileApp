@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tapSpace"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".testimplementation.fingertapping.FingerTappingTest">
+
+    <TextView
+        android:id="@+id/connect_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Badanie PRAWEJ ręki"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/connect_information_window"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/connect_information_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:justificationMode="inter_word"
+        android:text="@string/finger_tapping_instruction"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar_fingerTapping"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/circle_shape"
+            android:indeterminate="false"
+            android:max="20"
+            android:progress="20"
+            android:progressDrawable="@drawable/circle"
+            android:rotation="-90"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="125dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:onClick="onClickStartBtn"
+            android:text="@string/start"
+            android:textSize="24dp"
+            android:background="@drawable/button_bg_round_long"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/progressBar_fingerTapping" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="213dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_bg_round_long"
+            android:gravity="center"
+            android:onClick="onClickStopBtn"
+            android:text="Zapisz test"
+            android:textSize="24dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/progressBar_fingerTapping" />
+
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="20"
+            android:textColor="@color/colorPrimary"
+            android:textSize="70sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/tapsInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/total_taps"
+        android:textAlignment="center"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tapsCounter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="24dp" />
+
+    <LinearLayout
+        android:id="@+id/tapSpace2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="17mm"
+            android:layout_height="17mm"
+            android:layout_marginRight="4mm"
+            android:background="@drawable/button_bg_round"
+            android:enabled="false"
+            android:text="TAP" />
+
+        <Button
+            android:id="@+id/rightBtn"
+            android:layout_width="17mm"
+            android:layout_height="17mm"
+            android:background="@drawable/button_bg_round"
+            android:enabled="false"
+            android:text="TAP" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

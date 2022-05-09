@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pwr.edu.app.parkinsonsdisease">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/ParkinsonsDisease">
+
+        <service android:name="com.mbientlab.metawear.android.BtleService" />
+
+        <activity
+            android:name=".animation.StartActivity"
+            android:theme="@style/ParkinsonsDisease.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".authorization.LoginActivity"
+            android:theme="@style/ParkinsonsDisease.NoActionBar" />
+        <activity android:name=".mbientlab.DeviceSetupActivity"/>
+        <activity android:name=".PatientMainActivity" />
+        <activity android:name=".testimplementation.accelerometertest.AccelerometerTest" android:label="Accelerometer Test"/>
+        <activity android:name=".ChooseTest" android:label="Wybierz test"/>
+        <activity android:name=".mbientlab.DeviceMainActivity" android:label="Test" />
+        <activity android:name=".testimplementation.gyroscopetest.GyroscopeTest" android:label="Gyroscope Test"/>
+        <activity android:name=".testimplementation.fingertapping.FingerTapping" android:label="@string/title_activity_fingertapping_test" />
+        <activity android:name=".testimplementation.fingertapping.FingerTappingTest"/>
+        <activity android:name=".DoctorMainActivity" />
+        <activity android:name=".AdminMainActivity" />
+        <activity android:name=".registration.CreateNewPatient"/>
+        <activity android:name=".registration.CreateNewDoctor"/>
+    </application>
+
+</manifest>

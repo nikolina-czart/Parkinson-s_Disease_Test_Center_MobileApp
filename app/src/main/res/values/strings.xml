@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Parkinson\'s Disease</string>
+    <string name="email">E-mail</string>
+    <string name="password">Hasło</string>
+    <string name="sign_in_button">Zaloguj się</string>
+
+
+    <string name="title_connecting">Łączenie</string>
+    <string name="title_reconnect_attempt">Ponowne połączenie</string>
+    <string name="message_wait">Prosze poczekać</string>
+    <string name="action_disconnect">Rozłączono</string>
+    <string name="information_title_left"> Badanie LEWEJ ręki</string>
+    <string name="information_title_right"> Badanie PRAWEJ ręki</string>
+    <string name="information_service">Proszę założyć czujnik na ręke. Położyć ją swobodnie na kolanie. Po przygotowaniu wystartować pomiar.</string>
+    <string name="information_service_right">Proszę założyć czujnik na ręke prawą. Położyć ją swobodnie na kolanie. Po przygotowaniu wystartować pomiar.</string>
+
+    <string name="hint_minute">Minute</string>
+    <string name="message_minutes">Please Enter Minutes...</string>
+    <string name="connect_device">Połącznenie z czujnikiem w opasce</string>
+    <string name="connect_instruction">Proszę o wybranie swojego czunika do badań z listy poniżej.</string>
+    <string name="connect_information_1">W momencie braku wyświetlanego czujnika należy nacisknąć przycisk \'SCAN\' w celu ponowienia próby.</string>
+    <string name="information_last_drug">Czas od ostaniego przyjęcia leku</string>
+    <string name="new_test">nowy test</string>
+
+    <string name="no_data">Nie podano żadnej wartości</string>
+    <string name="time_last_drug">Liczba godzin</string>
+    <string name="title_activity_fingertapping_test">FingertappingTest</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="finger_tapping_instruction">Połóż telefon na płaskiej powierzchni. Użyj dwóch palców, aby na przemian stukać tak szybko, jak to możliwe przez 20 sekund.</string>
+    <string name="start">START</string>
+    <string name="total_taps">Suma naciśnięć:</string>
+    <string name="left">left</string>
+    <string name="right">right</string>
+    <string name="test_finished">Test zakończony</string>
+    <string name="Add_patient_instrustion">Załóż konto dla nowego pacjenta. E-mail jest kombinacją 3 pierwszych liter imienia i 3 pierwszych liter nazwiska oraz @ z domeną e-mail. Ustaw hasło pacjenta i wybierz badania, do których ma dostęp.</string>
+    <string name="Add_doctor_instruction">Załóż konto lekarza, wpisując jego adres e-mail i hasło, z których będzie korzystał.</string>
+</resources>
